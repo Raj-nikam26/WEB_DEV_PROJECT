@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Notes App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fefefe, #e0f7fa);
+      color: #333;
+      min-height: 100vh;
+      position: relative;
+      padding: 1rem;
+    }
+
+    .add {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00796b;
+      color: #fff;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 121, 107, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .add:hover {
+      background: #00695c;
+      transform: scale(1.05);
+    }
+
+    .add i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <button class="add" id="add">
+    <i class="fas fa-plus"></i> Add Note
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
